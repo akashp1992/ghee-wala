@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ghee-wala/static/css/main.afd7172b.chunk.css",
-    "main.js": "/ghee-wala/static/js/main.533d9bb3.chunk.js",
-    "main.js.map": "/ghee-wala/static/js/main.533d9bb3.chunk.js.map",
+    "main.js": "/ghee-wala/static/js/main.be91a360.chunk.js",
+    "main.js.map": "/ghee-wala/static/js/main.be91a360.chunk.js.map",
     "runtime-main.js": "/ghee-wala/static/js/runtime-main.713a1729.js",
     "runtime-main.js.map": "/ghee-wala/static/js/runtime-main.713a1729.js.map",
     "static/css/2.58a45539.chunk.css": "/ghee-wala/static/css/2.58a45539.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.58a45539.chunk.css",
     "static/js/2.f33ca9ce.chunk.js",
     "static/css/main.afd7172b.chunk.css",
-    "static/js/main.533d9bb3.chunk.js"
+    "static/js/main.be91a360.chunk.js"
   ]
 }
