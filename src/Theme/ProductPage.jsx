@@ -58,13 +58,15 @@ export const FilterTitle = styled.span`
 `;
 
 export const FilterColor = styled.div`
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: ${(props) => props.color};
-  margin: 0px 5px;
-  cursor: pointer;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: ${(props) => props.color};
+margin: 0px 5px;
+cursor: pointer;
 `;
+
+
 
 export const FilterSize = styled.select`
   margin-left: 10px;

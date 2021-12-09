@@ -11,18 +11,21 @@ import Login from "./pages/Login";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
+import Success from "./pages/Success";
 import Register from "./pages/Register";
+import {useSelector} from 'react-redux';
 
 function App() {
-  const user = false;
+  const user = useSelector((state)=>state.user.currentUser);
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/ghee-wala/" element={<Home />} />
         <Route path="/products/:category" element={<ProductList />} />
-        <Route path="product/:id" element={<Product />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
+        <Route path="/success/:paymentId" element={<Success/>}/>
+        <Route path="/login" element={user ? <Navigate to="/ghee-wala/" /> : <Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>

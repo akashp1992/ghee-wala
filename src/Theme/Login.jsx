@@ -56,3 +56,7 @@ export const Link = styled.a`
   text-decoration: underline;
   cursor: pointer;
 `;
+
+export const Error = styled.span`
+  color: red;
+`;

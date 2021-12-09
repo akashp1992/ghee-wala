@@ -1,5 +1,6 @@
 import React from "react";
 import { Badge, Button } from "@material-ui/core";
+import {useSelector} from 'react-redux';
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
 import {
   Center,
@@ -18,12 +19,13 @@ import StyledLink from "../Theme/StyledLink";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Navbar = () => {
-  const notify = () => {
-    toast("You are Not LoggedIn...");
-  };
+  const quantity=useSelector(state=>state.cart.quantity);
+  // const notify = () => {
+  //   toast("You are Not LoggedIn...");
+  // };
   return (
     <Container>
-      <ToastContainer
+      {/* <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -33,7 +35,7 @@ const Navbar = () => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-      />
+      /> */}
       <Wrapper>
         <Left>
           <Language>EN</Language>
@@ -50,11 +52,11 @@ const Navbar = () => {
             <MenuItem>REGISTER</MenuItem>
           </StyledLink>
           <StyledLink to="/login" >
-            <MenuItem onClick={notify}>SIGN IN</MenuItem>
+            <MenuItem >SIGN IN</MenuItem>
           </StyledLink>
           <Link to="/cart">
             <MenuItem>
-              <Badge badgeContent={4} color="primary">
+              <Badge badgeContent={quantity} color="primary">
                 <ShoppingCartOutlined />
               </Badge>
             </MenuItem>

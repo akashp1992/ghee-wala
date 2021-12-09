@@ -11,6 +11,7 @@ import {
 const CategoryItem = ({ items }) => {
   return (
     <Container>
+       
         <Link to={`/products/${items.cat}`}>
       <Image src={items.img} />
       <Info>

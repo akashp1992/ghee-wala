@@ -13,9 +13,9 @@ import {
 } from "../Theme/Slider";
 import { sliderItems } from "../data";
 import { useSelector, useDispatch } from "react-redux";
-import { gotoLeft, gotoRight } from "../actions";
+import { gotoLeft, gotoRight } from '../redux/changeSlider'
 const Slider = () => {
-  const changeSlide = useSelector((state) => state.changeTheSlider);
+  const changeSlide = useSelector((state) => state.slider.slide);
   const dispatch = useDispatch();
   return (
     <Container>
